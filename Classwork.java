@@ -6,7 +6,10 @@ public class Classwork
     System.out.println(firstProb);
 
     System.out.println(delEnd("library", 5));
-    // test your code here
+
+    CompareLowerCase("BAgels", "candLes");
+
+    LengthFirst("Down is the new up");
   }
 
   public static String firstlastN(String word, int n)
@@ -29,7 +32,22 @@ public class Classwork
     return newWord;
   }
 
-  public static
-  // write solutions to problems below
+  public static void CompareLowerCase(String word1, String word2)
+  {
+    System.out.println(word1 + " " + word2);
+    word1 = word1.toLowerCase();
+    word2 = word2.toLowerCase();
+    System.out.println(word1.compareTo(word2));
+  }
+
+  public static void LengthFirst(String sentence)
+  {
+    int space = sentence.indexOf(" ");
+    String firstWord = sentence.substring(0, space);
+    int wordLength = firstWord.length();
+    System.out.println(sentence);
+    System.out.println(wordLength);
+
+  }
 
 }
